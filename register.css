@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(61, 3, 3);
+}
+
+.nav-content ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-content li {
+  padding: 0px 10px;
+}
+
+.nav-content a {
+  color: rgb(253, 0, 0);
+  text-decoration: none;
+}
+
+.nav-content a:hover {
+  border: 2px solid red;
+  padding: 7px 5px;
+}
+
+.burger {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  display: none;
+}
+
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(245, 57, 57);
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+}
+
+.form-content{
+    margin-top: 30px;
+}
+
+.form-content h5{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.form-content input{
+    padding: 5px 80% 5px 0px;
+    border: 1px 1px thin rgb(133, 127, 127);
+}
+
+.btn{
+    margin-top: 12px;
+    margin-left: -15px;
+}
+
+.btn button{
+    background-color: skyblue;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.btn button:hover{
+    background-color: rgb(245, 57, 57);
+    color: white;
+}
+
+footer{
+    background-color: rgb(104, 9, 9);
+    height: 10%;
+}
+
+.footer-container{
+    margin-top: 85px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+.footer-container ul{
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 12%;
+}
+
+.footer-container li{
+    display: inline-block;
+}
+
+.footer-container a{
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+}
